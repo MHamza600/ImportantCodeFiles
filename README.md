@@ -5,7 +5,18 @@ Starting with OOP concept solving a design problem in which we want to sort obje
 
 So, What a sorting algorithm need , A Comparatore function (To compare two values). So, Inherited Sorting Algorthim(bubble, selection and insertion) from sorting algorithm class and give comapartor function to sort function whenever it is called.
 
-The code of the required solution is in file (Bubble sort , Selection Sort , Insertion sort , comarator, Employee class , Student class , Sorting Algorithm , SOrtng Assignment) 
+The code of the required solution is in file (Bubble sort , Selection Sort , Insertion sort , comarator, Employee class , Student class , Sorting Algorithm , Sorrtng Assignment)
+
+Another OOP snipet in which I implemented Structure of design pattern chain of responsibility, A user can search on the bassis of Temparature , PMvlaue and Humidity.  So , Temprature Sensor was not available command shifted to Humodity and vice versa
+
+The pattern Implmented in files(byHumidity, bypM , ByTemp , Search , Controller)
+
+
+
+
+
+
+
 
 
 
