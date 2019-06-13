@@ -7,13 +7,13 @@ So, What a sorting algorithm need , A Comparatore function (To compare two value
 
 The code of the required solution is in file (Bubble sort , Selection Sort , Insertion sort , comparator, Employee class , Student class , Sorting Algorithm , Sorrtng Assignment)
 
-Another OOP snipet in which I implemented Structure of design pattern chain of responsibility, A user can search on the bassis of Temparature , PMvlaue and Humidity.  So , Temprature Sensor was not available command shifted to Humodity and vice versa
+Another OOP snipet in which I implemented Structure of design pattern chain of responsibility, A user can search on the bassis of Temparature , PMvlaue and Humidity.  So , Temprature Sensor was not available command shifted to Humidity and vice versa
 
 The pattern Implmented in files(byHumidity, bypM , ByTemp , Search , Controller)
 
 A web Scrapper code in which I try to find keywords from webpages in file (Scrapper)
 
-A data is stored in a linklist structure after dycryotion to acheive security purposes in file (LinkList)
+A data is stored in a linklist structure after dycryption to acheive security purposes in file (LinkList)
 
 A Sample Unity Game Script in file (UnityGameScript) 
 
