@@ -38,7 +38,8 @@ public class AqsController {
             response.setResponse("YOU CAN NOT BE AN ADMIN");
         }
 
-        else {
+        else 
+	{
             aqsService.setAdmin(admin);
             response.setResponse("ADMIN REGISTERED");
         }
@@ -51,13 +52,12 @@ public class AqsController {
     public @ResponseBody
     Response SetPartner(@RequestBody Partner partner) {
         Response response = new Response();
-
         if (aqsService.partnerEmailExist(partner.getEmail()))
         {
             response.setResponse("ENTER OTHER EMAIL");
         }
-
-        else {
+        else 
+	{
             aqsService.setPartner(partner);
             response.setResponse("Partner Registered");
         }
