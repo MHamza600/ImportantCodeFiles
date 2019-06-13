@@ -17,6 +17,8 @@ A data is stored in a linklist structure after dycryotion to acheive security pu
 
 A Sample Unity Game Script in file (UnityGameScript) 
 
+A Sample Student class code for desktop application in file (Student.cs)
+
 
 
 
