@@ -32,12 +32,10 @@ public class AqsController {
     public @ResponseBody
     Response SetAdmin(@RequestBody Admin admin) {
         Response response = new Response();
-
         if (aqsService.adminEmailExist(admin.getEmail()))
         {
             response.setResponse("YOU CAN NOT BE AN ADMIN");
         }
-
         else 
 	{
             aqsService.setAdmin(admin);
@@ -91,9 +89,7 @@ public class AqsController {
     @RequestMapping(value = {"/device"}, method = RequestMethod.POST)
     public @ResponseBody
     Response SetDevice(@RequestBody Device device) {
-
         Response response = new Response();
-
         if (aqsService.deviceIdExist(device.getId()))
         {
             response.setResponse("DEVICE ID ALREADY EXIST");
@@ -147,7 +143,6 @@ public class AqsController {
     public @ResponseBody
     Response SetLocation(@RequestBody Location location) {
         Response response = new Response();
-
         Long deviceid=location.getDeviceId();
         if(deviceid!=null)
             aqsService.addNewLocation(deviceid);
@@ -174,7 +169,6 @@ public class AqsController {
     public @ResponseBody
     Response SetErrorlog(@RequestBody Errorlog errorlog) {
         Response response = new Response();
-
         if (aqsService.deviceIdNotExist(errorlog.getDeviceId()))
         {
             response.setResponse("DEVICE ID NOT EXIST");
@@ -227,10 +221,9 @@ public class AqsController {
     //Retrieve all Publicside records
     @RequestMapping(value = {"/publicside"}, method = RequestMethod.GET)
     public @ResponseBody
-    Iterable<Publicside> GetPublicside() {
-
+    Iterable<Publicside> GetPublicside() 
+    {
         return aqsService.getAllPublicside();
-
     }
 
 
@@ -238,7 +231,7 @@ public class AqsController {
     @RequestMapping(value = {"/publicside/{latitude}/{longitude}"}, method = RequestMethod.GET)
     public @ResponseBody
     Iterable<Publicside> GetHomeData(@PathVariable("latitude") double latitude,@PathVariable("longitude") double longitude) 
-	{
+    {
         return aqsService.getHomeData(latitude,longitude);
     }
 
@@ -348,7 +341,6 @@ public class AqsController {
         Long deviceid=location.getDeviceId();
         if(deviceid!=null)
         location.addNewLocation(deviceid);
-
     }
 
 
